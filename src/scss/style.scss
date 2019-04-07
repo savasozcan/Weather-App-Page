@@ -1,0 +1,610 @@
+// COLOR VARIABLES
+$color_1 : #ffffff;
+$color_2 : #fc6a42;
+$color_3 : #4466c9;
+$color_4 : #ea5833;
+$color_5 : #6581ce;
+$color_6 : #a6a6a6;
+$color_7 : #353854;
+$color_8 : #648cff;
+$color_9 : #6ca3ff;
+$color_10: #fcec64;
+$color_11: #b8faee;
+$color_12: #b5b5c8;
+$color_13: #181a2b;
+$color_14: #434769;
+$color_15: #c3cfe5;
+$color_16: #314b91;
+$color_17: #434769;
+$color_18: #2d3049;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  .head {
+    width: 100%;
+   &:before {
+     content: '';
+     position: absolute;
+     background-image: url("../images/wave2.png");
+     background-size: 100%;
+     width: 100%;
+     height: 100vh;
+     background-repeat: no-repeat;
+   }
+    #header {
+      position: absolute;
+      width: 100%;
+      //text-align: center;
+      padding-top: 2%;
+      #header-menu, #social-container {
+        display: inline-block;
+      }
+      #logo-container {
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 20%;
+        box-sizing: border-box;
+      }
+      #header-menu {
+        margin-left: 10%;
+        .header-menu-item {
+          margin: 0 40px;
+          font-size: 14px;
+          border-bottom: 2px solid transparent;
+          transition: border-bottom .4s ease-in-out;
+          &:hover {
+            border-bottom: 2px solid $color_3;
+
+          }
+        }
+      }
+      #social-container {
+        float: right;
+        margin-right: 10%;
+        .social-icons {
+          padding-right: 15px;
+          font-size: 18px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $color_1;
+        text-transform: capitalize;
+        .fab {
+          transition: all .4s ease-in-out;
+          &:hover {
+            transform: scale(1.3);
+            color: $color_3;
+          }
+        }
+      }
+    }
+    .head-wrapper {
+      position: absolute;
+      width: 100%;
+      margin-top: 20vh;
+      padding-left: 20%;
+      box-sizing: border-box;
+      .head-info {
+        width: 50%;
+        .info-text {
+          color: $color_1;
+        }
+        .info-first {
+          font-size: 36px;
+          font-weight: 700;
+        }
+        .btn {
+          padding: 10px 20px;
+          color: $color_1;
+          font-weight: 600;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 25px;
+          transition: all .4s ease-in-out;
+          outline: none;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        #download {
+          background-color: $color_2;
+          margin-right: 10px;
+          &:hover {
+            background-color: $color_4;
+          }
+        }
+        #features {
+          background-color: $color_3;
+          &:hover {
+            background-color: $color_16;
+          }
+        }
+      }
+      .head-phone {
+        float: right;
+        margin-top: -22%;
+        margin-right: 5%;
+        img {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+.layout {
+  width: 100%;
+  height: 200px;
+  padding-top: calc(100vh + 80px);
+  .features-container {
+    .feature-head {
+      p {
+        text-align: center;
+        color: $color_8;
+        .feature-top {
+          font-size: 24px;
+          font-weight: 700;
+        }
+        .feature-bottom {
+          color: $color_6;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .feature {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    .feature-item {
+      width: 33%;
+      display: inline-block;
+      p {
+        color: $color_6;
+        font-size: 12px;
+        span {
+          font-weight: 700;
+          font-size: 16px;
+          color: $color_7;
+        }
+      }
+      .feature-icon {
+        width: 60px;
+      }
+    }
+  }
+  .mt {
+    margin-top: 100px;
+  }
+  .mb {
+    margin-bottom: 500px;
+  }
+  .screenshots {
+    width: 100%;
+    margin-top: 100px;
+    .screen-item {
+      width: 80%;
+      .screen-size {
+        width: 50%;
+        display: inline-block;
+        h3 {
+          color: $color_8;
+        }
+        p {
+          color: $color_7;
+        }
+        .icon-info {
+          width: 80px;
+        }
+        .icon-screen {
+          width: 120px;
+        }
+      }
+      .screen-phone {
+        margin-left: 30%;
+        .phone-cloud {
+          width: 200px;
+        }
+        &:before {
+          content: '15°';
+          position: absolute;
+          background-color: $color_9;
+          padding: 15px;
+          left: 0;
+          border-radius: 50%;
+          color: $color_1;
+          font-weight: 700;
+          left: 22%;
+          margin-top: 18%;
+        }
+        &:after {
+          content: 'Cloudy';
+          position: absolute;
+          background-color: $color_10;
+          padding: 20px 10px;
+          border-radius: 50%;
+          color: $color_1;
+          font-weight: 700;
+          font-size: 12px;
+          right: 61%;
+          margin-top: 8%;
+        }
+      }
+      .screen-info {
+        float: right;
+        margin-top: -30%;
+        margin-right: -15%;
+      }
+      .screen-phone-2 {
+        margin-right: 10%;
+        .phone-sun {
+          width: 200px;
+        }
+      }
+      .screen-phone-3 {
+        margin-left: 30%;
+        h3 {
+          color: $color_8;
+        }
+        p {
+          color: $color_7;
+        }
+        .icon-screen {
+          width: 120px;
+        }
+      }
+    }
+    .screen-item-2 {
+       margin-top: 15%;
+     }
+    .screen-item-3 {
+      margin-top: 15%;
+      .screen-phone {
+        .phone-rainy {
+          width: 200px;
+        }
+        &:before {
+          content: '9°';
+          padding: 10px 15px;
+        }
+        &:after {
+          content: 'Rainy';
+          padding: 17px 10px;
+          background-color: $color_11;
+          color: $color_6;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .blockquotes {
+    width: 100%;
+    .row {
+      margin-top: 5%;
+      .block-1{
+        float: left;
+      }
+      .block-2 {
+      }
+      .block {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+        blockquote {
+          &:before {
+            color: $color_8;
+            content: '\201C';
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 6em;
+            font-weight: bold;
+            line-height: 0px;
+            margin: 0px 5px 0px -40px;
+            vertical-align: bottom;
+          }
+          &:after {
+            color: $color_8;
+            content: '\201D';
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 6em;
+            font-weight: bold;
+            line-height: 0px;
+            margin: 0px 5px 0px -40px;
+            vertical-align: bottom;
+            margin-left: 65%;
+          }
+          footer {
+            margin-left: -40%;
+            margin-top: 4%;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  #download-section {
+    background-image: url("../../src/images/phone_download.png");
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    .download-text {
+      padding: 5% 0 0 10%;
+      h2, p {
+        color: $color_1;
+      }
+      p {
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+      .store {
+        width: 100px;
+      }
+    }
+  }
+  footer {
+    .footer {
+      width: 100%;
+      height: 235px;
+      background-color: $color_7;
+      padding-top: 8%;
+      text-align: center;
+      margin-bottom: 0;
+      .item {
+        a {
+          text-decoration: none;
+          font-weight: 700;
+        }
+        .orange {
+          color: $color_4;
+        }
+        .blue {
+          color: $color_3;
+        }
+      }
+      .item-logo {
+        padding-right: 20%;
+        font-size: 18px;
+        box-sizing: border-box;
+      }
+      .items, .footer-social {
+        display: inline-block;
+      }
+      .items {
+        a{
+          color: $color_12;
+          text-transform: capitalize;
+          transition: color .4s ease-in-out;
+          margin: 0 40px;
+          font-size: 14px;
+          &:hover {
+            color: $color_1;
+          }
+        }
+      }
+      hr {
+        display: block;
+        height: 1px;
+        width: 90%;
+        margin: 0 auto;
+        border: 0;
+        border-top: 1px solid $color_14;
+        padding: 0;
+        margin-top: 80px;
+      }
+      .footer-text {
+        float: right;
+        color: $color_12;
+        padding: 5% 14% 0 0;
+        font-size: 10px;
+      }
+      .footer-social {
+        a {
+          text-decoration: none;
+          color: $color_12;
+          transition: color .4s ease-in-out;
+          font-size: 18px;
+          margin-right: 15px;
+          &:hover {
+            color: $color_13;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Menu Dropdown
+.dropbtn, .dropdown {
+  transition: color .4s ease-in-out;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $color_3;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: display .4s ease-in-out;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.dropdown-content a {
+  padding: 10px 5px;
+  text-decoration: none;
+  display: block;
+  transition: background-color .4s ease-in-out;
+  text-transform: capitalize;
+}
+
+.dropdown-content a:hover {
+  background-color: $color_5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+//Carousel
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  #right {
+    right: 0;
+    margin: 10% 25% 0 0 ;
+  }
+  #left {
+    left: 0;
+    margin: 10% 0 0 25%;
+  }
+}
+
+.box{
+  position: absolute;
+  width: 200px;
+  height: 350px;
+  line-height: 180px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 0 20px 0.5px black;
+  transition: 0.5s all ease;
+  img {
+    width: 100%;
+  }
+
+  &--left{
+    opacity: 0.7;
+    transform: scale(0.85) translateX(-50%);
+  }
+
+  &--mid{
+    z-index: 999;
+  }
+
+
+  &--right{
+    opacity: 0.7;
+    transform: scale(0.85) translateX(50%);
+  }
+
+  &--hidden{
+    position: absolute;
+    margin: 20px auto;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.btnn{
+  position: absolute;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  opacity: 0.8;
+  transition: all 500ms ease;
+  color: $color_15;
+  font-size: 40px;
+  background: transparent;
+
+  &:hover{
+    opacity:1;
+  }
+
+  &:active{
+    transition: scale 100ms;
+    transform: scale(0.9);
+  }
+
+  &--right{
+    right:50px;
+  }
+
+  &--left{
+    left:50px;
+  }
+}
+
+// Accordion Menu
+#accordion {
+  max-width: 400px;
+  margin: 0 auto;
+
+  .title {
+    padding: 20px;
+    background-color: $color_5;
+    font-weight: 700;
+    color: $color_1;
+    cursor: pointer;
+    .far {
+      float: right;
+      transition: color .4s ease-in-out;
+    }
+    &.active {
+      .far {
+        color: $color_13;
+      }
+      & + .accordion-content {
+        max-height: 500px;
+        padding: {
+          top: 20px;
+          bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .accordion-content {
+    max-height: 0;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    border: 1px solid #aaa;
+    border-top: 0;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.3s;
+    font-size: 14px;
+  }
+}
+
+//Back to top
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: $color_17;
+  color: white;
+  cursor: pointer;
+  //padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color .4s ease-in-out;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  &:hover {
+    background-color: $color_18;
+  }
+}
+
+
+
+

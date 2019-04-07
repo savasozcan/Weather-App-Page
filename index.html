@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="head bg">
+            <span class="wave"></span>
+            <div id="header">
+                <span id="logo-container" class="item">
+                    <a id="logo" href="#">FUN WEATHER.</a>
+                </span>
+                <div id="header-menu" class="item">
+                    <a class="header-menu-item" href="#">home</a>
+                    <span class="dropdown">
+                        <a class="header-menu-item dropbtn" href="#">features</a>
+                         <div class="dropdown-content">
+                            <a href="#">reusability</a>
+                            <a href="#">recycle</a>
+                            <a href="#">reclaimalion</a>
+                        </div>
+                    </span>
+                    <a class="header-menu-item" href="#">reviews</a>
+                    <a class="header-menu-item" href="#">download</a>
+                </div>
+                <div id="social-container" class="item">
+                    <a class="social-icons" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-icons" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="social-icons" href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="head-wrapper">
+                <div class="head-info">
+                    <p class="info-text info-first">Get the most fun <br>weather app</p>
+                    <p class="info-text info-second">Simple, nice and user-friendly application of the <br>weather Only useful information</p>
+                    <a href="#"><button id="download" class="btn">Download</button></a>
+                    <a href="#"><button id="features" class="btn">Features</button></a>
+                </div>
+                <div class="head-info head-phone">
+                    <img src="./src/images/phone.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="layout">
+    <button onclick="topFunction()" id="myBtn" title="Başa Dön"><i class="fas fa-chevron-up"></i></button>
+    <div class="features-container">
+        <div class="feature-head">
+            <p><span class="feature-top">PERFECT FEATURES</span> <br><span class="feature-bottom">Only necessary</span></p>
+        </div>
+    </div>
+    <div class="feature">
+        <div class="feature-item">
+            <img class="feature-icon" src="./src/images/icon_usability.png" alt="">
+            <p class="feature-text"><span>Usability</span> <br><br>Sometimes the simples things are <br>the hardest to find. So we created a
+                <br>new line for everyday life</p>
+        </div>
+        <div class="feature-item">
+            <img class="feature-icon" src="./src/images/icon_parallax.png" alt="">
+            <p class="feature-text"><span>Parallax Effect</span> <br><br>Sometimes the simples things are <br>the hardest to find. So we created a
+                <br>new line for everyday life</p>
+        </div>
+        <div class="feature-item">
+            <img class="feature-icon" src="./src/images/icon_colors.png" alt="">
+            <p class="feature-text"><span>Unlimited Colors</span> <br><br>Sometimes the simples things are <br>the hardest to find. So we created a
+                <br>new line for everyday life</p>
+        </div>
+    </div>
+    <div class="features-container mt mb">
+        <div class="feature-head">
+            <p><span class="feature-top">SIMPLE WIDGETS</span> <br><span class="feature-bottom">Drag and Drop</span></p>
+        </div>
+        <div class="carousel">
+
+            <button id="left" class='btnn btn--left'> <i class="fas fa-chevron-left"></i> </button>
+
+            <div id="1" class="box box--left">
+                <img src="./src/images/image_left.png" alt="">
+            </div>
+
+            <div id="2" class="box box--mid">
+                <img src="./src/images/image_center.png" alt="">
+            </div>
+
+            <div id="3" class="box box--right">
+                <img src="./src/images/image_right.png" alt="">
+            </div>
+
+            <div id="4" class="box box--hidden">
+                <img src="./src/images/image_center.png" alt="">
+            </div>
+
+            <button id="right" class="btnn btn--right"> <i class="fas fa-chevron-right"></i> </button>
+
+        </div>
+    </div>
+    <div class="features-container mt">
+        <div class="feature-head">
+            <p><span class="feature-top">SCREENSHOTS</span> <br><span class="feature-bottom">The brightest images</span></p>
+        </div>
+    </div>
+    <div class="screenshots">
+        <div class="screen-item">
+            <div class="screen-phone screen-size">
+                <img class="phone-cloud" src="./src/images/screen_cloudy.png" alt="">
+            </div>
+            <div class="screen-info screen-size">
+                <img class="icon-info" src="./src/images/icon_cloudy.png" alt="">
+                <h3>WHEN THE CLOUDS</h3>
+                <p>Variable information on the air humidity, the <br>feeling of the water, and the ability to <br>share this with your friends.</p>
+                <img class="icon-screen" src="./src/images/icons.png" alt="">
+            </div>
+        </div>
+        <div class="screen-item screen-item-2">
+            <div class="screen-phone-3">
+                <img class="icon-info" src="./src/images/icon_sun.png" alt="">
+                <h3>WHEN THE SUN</h3>
+                <p>Sometimes the simplest things are the <br>hardest to find. So we created a new line <br>for everyday life. Sometimes the simplest</p>
+                <img class="icon-screen" src="./src/images/icons.png" alt="">
+            </div>
+            <div class="screen-info screen-phone-2">
+                <img class="phone-sun" src="./src/images/screen_sun.png" alt="">
+            </div>
+        </div>
+        <div class="screen-item screen-item-3">
+            <div class="screen-phone screen-size">
+                <img class="phone-rainy" src="./src/images/screen_rainy.png" alt="">
+            </div>
+            <div class="screen-info screen-size">
+                <img class="icon-info" src="./src/images/icon_rainy.png" alt="">
+                <h3>WHEN THE RAIN</h3>
+                <p>Sometimes the simplest things are the <br>hardest to find. So we created a new line <br>for everyday life. Sometimes the simplest</p>
+                <img class="icon-screen" src="./src/images/icons.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="features-container mt">
+        <div class="feature-head">
+            <p><span class="feature-top">WHAT PEOPLE ARE SAYING</span> <br><span class="feature-bottom">Reviews</span></p>
+        </div>
+    </div>
+    <div class="blockquotes">
+        <div class="row">
+            <div class="block block-1">
+                <blockquote>
+                    What are offers is space - a certain breathing room <br>for the spirit.
+                    <footer>John Updike</footer>
+                </blockquote>
+            </div>
+            <div class="block block-2">
+                <blockquote>
+                    We do not see nature with our eyes, but with our <br>understanding and our hearts
+                    <footer>William Hazlitt</footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="block block-1">
+                <blockquote>
+                    The only courage that matters is the kind that gets <br>you from one moment to the next.
+                    <footer>Mignon McLaughin</footer>
+                </blockquote>
+            </div>
+            <div class="block block-2">
+                <blockquote>
+                    No man has a good enough memory to be a successful <br>liar
+                    <footer>Abraham Lincoln</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="features-container mt">
+        <div class="feature-head">
+            <p><span class="feature-top">WHAT PEOPLE ARE SAYING - ACCORDION</span> <br><span class="feature-bottom">ES6</span></p>
+        </div>
+    </div>
+    <div id="accordion">
+        <div class="title active">
+            <i class="far fa-lightbulb"></i>John Updike
+        </div>
+        <div class="accordion-content">
+            What are offers is space - a certain breathing room for the spirit.
+        </div>
+        <div class="title">
+            <i class="far fa-lightbulb"></i> William Hazlitt
+        </div>
+        <div class="accordion-content">
+            We do not see nature with our eyes, but with our understanding and our hearts
+        </div>
+        <div class="title">
+            <i class="far fa-lightbulb"></i>Mignon Mclaughin
+        </div>
+        <div class="accordion-content">
+            The only courage that matters is the kind that gets you from one moment to the next.
+        </div>
+        <div class="title">
+            <i class="far fa-lightbulb"></i>Abraham Lincoln
+        </div>
+        <div class="accordion-content">
+            No man has a good enough memory to be a successful liar
+        </div>
+    </div>
+    <div id="download-section">
+        <div class="download-text">
+            <h2>HOW DOWNLOAD THE APP?</h2>
+            <p>Just download the app from store. <br>Simple, nice and user-friendly application of <br>the weather. Only relevant and useful
+                <br>information</p>
+            <a href="#"><img class="store" src="./src/images/google_play.png" alt=""></a>
+            <a href="#"><img class="store" src="./src/images/appstore.png" alt=""></a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <span class="item item-logo">
+                <a href="#"><span class="orange">FUN </span><span class="blue">WEATHER.</span></a>
+            </span>
+            <div class="item items">
+                <a class="header-menu-item" href="#">home</a>
+                <a class="header-menu-item" href="#">features</a>
+                <a class="header-menu-item" href="#">reviews</a>
+                <a class="header-menu-item" href="#">download</a>
+            </div>
+            <div class="footer-social">
+                <a class="social-icons" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-icons" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="social-icons" href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <hr>
+            <p class="footer-text">@ 2016 Al rights reserved. Weather App Theme by Gravpix</p>
+        </div>
+    </footer>
+</section>
+<script src="src/js/app.js"></script>
+</body>
+</html>
